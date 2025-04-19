@@ -16,7 +16,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || 'http://127.0.0.1:5500',
+    origin: process.env.FRONTEND_URL || 'https://dashing-cranachan-f117c5.netlify.app/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   },
 });
